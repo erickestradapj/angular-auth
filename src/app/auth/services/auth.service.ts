@@ -65,4 +65,8 @@ export class AuthService {
       catchError((err) => of(false))
     );
   }
+
+  public logout() {
+    localStorage.clear();
+  }
 }
